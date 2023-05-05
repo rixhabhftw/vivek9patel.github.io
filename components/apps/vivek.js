@@ -57,10 +57,6 @@ export class AboutVivek extends Component {
                     <img className=" w-3 md:w-4" alt="about vivek" src="./themes/Yaru/status/about.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">About Me</span>
                 </div>
-                <div id="education" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "education" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="vivek' education" src="./themes/Yaru/status/education.svg" />
-                    <span className=" ml-1 md:ml-2 text-gray-50 ">Education</span>
-                </div>
                 <div id="skills" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "skills" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
                     <img className=" w-3 md:w-4" alt="vivek' skills" src="./themes/Yaru/status/skills.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Skills</span>
@@ -68,13 +64,6 @@ export class AboutVivek extends Component {
                 <div id="projects" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "projects" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
                     <img className=" w-3 md:w-4" alt="vivek' projects" src="./themes/Yaru/status/projects.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Projects</span>
-                </div>
-                <div id="resume" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "resume" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="vivek's resume" src="./themes/Yaru/status/download.svg" />
-                    <span className=" ml-1 md:ml-2 text-gray-50 ">Resume</span>
-                </div>
-                <div className='my-0.5 w-28 md:w-full h-8 px-2 md:px-2.5 flex' >
-                    <iframe src="https://github.com/sponsors/vivek9patel/button" title="Sponsor vivek9patel" width={"100%"} height={"100%"} ></iframe>
                 </div>
             </>
         );
@@ -233,85 +222,6 @@ function Projects() {
             ],
             domains: ["javascript", "next.js", "tailwindcss"]
         },
-        {
-            name: "Chrome Extension React Bolierplate",
-            date: "Dec 2021",
-            link: "https://github.com/vivek9patel/chrome-extension-react-boilerplate",
-            description: [
-                "A boilerplate code to build a chrome extension with react and webpack",
-            ],
-            domains: ["javascript", "chrome-extension"]
-        },
-        {
-            name: "CodeConnect",
-            date: "Nov 2021",
-            link: "https://github.com/vivek9patel/CodeConnect-frontend",
-            description: [
-                "A multi-language pair-programming platform with the features of video meeting and whiteboard. Built with React.js, Tailwind CSS, Chakra UI, Express & Socket.io.",
-            ],
-            domains: ["javascript", "tailwindcss"]
-        },
-        {
-            name: "Ad Free Spotify",
-            date: "Jun 2021",
-            link: "https://github.com/vivek9patel/ad-free-spotify",
-            description: [
-                "Chrome extension to automatically mute/unmute Spotify tab when Advertisement starts and ends!",
-            ],
-            domains: ["javascript", "chrome-extension"]
-        },
-        {
-            name: "economist.com Unlocked",
-            date: "Mar 2021",
-            link: "https://github.com/vivek9patel/economist.com-unlocked",
-            description: [
-                "A chrome extension to read Paid Articles for Free & with no Ads, no subscription, no memberships!",
-            ],
-            domains: ["javascript", "chrome-extension"]
-        },
-        {
-            name: "Flutter banking app",
-            date: "Jan 2021",
-            link: "https://github.com/vivek9patel/flutter-banking-app",
-            description: [
-                "A Flutter & Firebase project for creating transactions between different Users and displaying the history of transactions done by all.",
-            ],
-            domains: ["flutter", "firestore", "dart", "firebase auth"]
-        },
-        {
-            name: "CPU scheduling application",
-            date: "Dec 2020",
-            link: "https://github.com/vivek9patel/CPU-Scheduling-APP-React-Native",
-            description: [
-                "React Native Application to visualize the CPU Scheduling algorithms with different Processes and Animations with gannt chart.",
-            ],
-            domains: ["react-native", "javascript"]
-        },
-        {
-            name: "Meditech Healthcare WebApp",
-            date: "Nov 2020",
-            link: "https://github.com/vivek9patel/Meditech-Healthcare",
-            description: [
-                "Developed Web Application to predict and diagnose diseases from x-ray images.",
-            ],
-            domains: ["javascript", "html5", "sass", "firebase", "tensorflow"]
-        },
-        {
-            name: "Problem Recommendation System",
-            date: "Sep 2020",
-            link: "https://github.com/vivek9patel/Improve-Codeforces",
-            description: [
-                "Django web application to suggest practice problems from the areas in which the user struggles to get pass in code-forces.",
-            ],
-            domains: ["django", "python", "codeforces-api", "javascript"]
-        },
-        {
-            name: "Cleanliness Automation",
-            date: "Dec 2019",
-            link: "https://github.com/vivek9patel/CPU-Scheduling-APP-React-Native",
-            description: [
-                "Developed Web Applications to automate Garbage collection and extraction systems for SSIP hackathon",
-            ],
         }
     ];
 
